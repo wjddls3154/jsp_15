@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="one">hi world</div>
+    <div class="one two" id="three">hi world two</div>
+    <div class="one two four">hi world three</div>
+
+    <script>
+      // 1. 단일 element 를 반환하는 함수
+      // document.getElementById('id')
+      // document.querySelector('query')
+      //
+      // 2. 복수의 element 를 반환하는 함수
+      // document.querySelectorAll('query')
+      // document.getElementByName('name')
+      k = document.getElementsByClassName("one");
+      console.log(k);
+      document.write(k["0"]["innerHTML"]);
+      document.write("<br>");
+      document.write(k["2"]["className"]);
+    </script>
+  </body>
+</html>
