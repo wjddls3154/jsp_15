@@ -16,12 +16,12 @@
   
   // document.getElementByName('name')
   
-  k = document.getElementsByClassName('one');
+  k = document.getElementsByClassName('one'); // 1. hi world, hi world two, hi world three 출력
   
   console.log(k);
   
-  document.write(k['0']['innerHTML']);
+  document.write(k['0']['innerHTML']); // 2. hi world 출력
   
   document.write('<br>');
   
-  document.write(k['2']['className']);
+  document.write(k['2']['className']); // 3. one two four 출력
